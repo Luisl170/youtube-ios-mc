@@ -13,10 +13,14 @@
 		FA05AA46248467EF0072F662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA05AA44248467EF0072F662 /* Main.storyboard */; };
 		FA05AA48248467F00072F662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA05AA47248467F00072F662 /* Assets.xcassets */; };
 		FA05AA4B248467F00072F662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA05AA49248467F00072F662 /* LaunchScreen.storyboard */; };
+		FAA093AE2493206300631C32 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA093AD2493206300631C32 /* Response.swift */; };
+		FAA4D6762485D74F0075266A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4D6752485D74F0075266A /* Constants.swift */; };
+		FAA4D6782485F0530075266A /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4D6772485F0530075266A /* Video.swift */; };
+		FAA4D67A2485F0FB0075266A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA4D6792485F0FB0075266A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA05AA3B248467EF0072F662 /* youtube-ios-mv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "youtube-ios-mv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA05AA3B248467EF0072F662 /* Youtube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA05AA3E248467EF0072F662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA05AA40248467EF0072F662 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA05AA42248467EF0072F662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		FA05AA47248467F00072F662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA05AA4A248467F00072F662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA05AA4C248467F00072F662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA093AD2493206300631C32 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FAA4D6752485D74F0075266A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAA4D6772485F0530075266A /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		FAA4D6792485F0FB0075266A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +56,7 @@
 		FA05AA3C248467EF0072F662 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA05AA3B248467EF0072F662 /* youtube-ios-mv.app */,
+				FA05AA3B248467EF0072F662 /* Youtube.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +71,10 @@
 				FA05AA47248467F00072F662 /* Assets.xcassets */,
 				FA05AA49248467F00072F662 /* LaunchScreen.storyboard */,
 				FA05AA4C248467F00072F662 /* Info.plist */,
+				FAA4D6752485D74F0075266A /* Constants.swift */,
+				FAA4D6772485F0530075266A /* Video.swift */,
+				FAA4D6792485F0FB0075266A /* Model.swift */,
+				FAA093AD2493206300631C32 /* Response.swift */,
 			);
 			path = "youtube-ios-mv";
 			sourceTree = "<group>";
@@ -84,7 +96,7 @@
 			);
 			name = "youtube-ios-mv";
 			productName = "youtube-ios-mv";
-			productReference = FA05AA3B248467EF0072F662 /* youtube-ios-mv.app */;
+			productReference = FA05AA3B248467EF0072F662 /* Youtube.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,6 +153,10 @@
 				FA05AA43248467EF0072F662 /* ViewController.swift in Sources */,
 				FA05AA3F248467EF0072F662 /* AppDelegate.swift in Sources */,
 				FA05AA41248467EF0072F662 /* SceneDelegate.swift in Sources */,
+				FAA4D67A2485F0FB0075266A /* Model.swift in Sources */,
+				FAA4D6762485D74F0075266A /* Constants.swift in Sources */,
+				FAA4D6782485F0530075266A /* Video.swift in Sources */,
+				FAA093AE2493206300631C32 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lara.youtube-ios-mv";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Youtube;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lara.youtube-ios-mv";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Youtube;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
